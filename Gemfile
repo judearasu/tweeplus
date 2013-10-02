@@ -32,13 +32,13 @@ group :doc do
   gem 'sdoc', require: false
 end
 
-#web service to help you track your code coverage over time.
-gem 'coveralls', require: false
+#Ruby interface to the Twitter API.
+gem 'twitter'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
