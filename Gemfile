@@ -32,6 +32,8 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+#web service to help you track your code coverage over time.
+gem 'coveralls', require: false
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
