@@ -4,9 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.0'
 
 # Nosql DB Mongo Adapter
-gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
-gem "bson_ext", "~> 1.9.2"
-gem "bson", "~> 1.9.2"
+gem 'mongoid', '~> 4', github: 'mongoid/mongoid'
+gem 'bson_ext'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
