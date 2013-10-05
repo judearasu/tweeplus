@@ -5,6 +5,8 @@ gem 'rails', '4.0.0'
 
 # Nosql DB Mongo Adapter
 gem 'mongoid', git: 'git://github.com/mongoid/mongoid.git'
+gem "bson_ext", "~> 1.9.2"
+gem "bson", "~> 1.9.2"
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'

@@ -38,6 +38,7 @@ GEM
     arel (4.0.0)
     atomic (1.1.14)
     bson (2.0.0.rc2)
+    bson_ext (1.5.1)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -137,6 +138,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bson_ext
   coffee-rails (~> 4.0.0)
   jbuilder (~> 1.2)
   jquery-rails
