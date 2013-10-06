@@ -34,7 +34,7 @@ group :doc do
 end
 
 #Ruby interface to the Twitter API.
-gem 'twitter'
+gem "twitter", "~> 5.0.0.rc.1"
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
