@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Word:</strong>
+  <%= @tweet_store.word %>
+</p>
+
+<p>
+  <strong>Tweet:</strong>
+  <%= @tweet_store.tweet %>
+</p>
+
+<%= link_to 'Edit', edit_tweet_store_path(@tweet_store) %> |
+<%= link_to 'Back', tweet_stores_path %>

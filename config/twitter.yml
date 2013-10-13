@@ -1,0 +1,6 @@
+#config/twitter.yml
+development:
+  consumer_key: Oz2823qZe95ZngJverF8rw
+  consumer_secret: AQcXRkYX1woJDtlbHUj8xJC3GrGiOHj2jmlDLbTVpc
+  access_token: 27643324-1SEH3ycadfpqOFjketZBmLnPsQYgqzlRbivVY50aL
+  access_token_secret: iHDbsPzka9qGNgNRXOyxlmm6heLex8GPUnfvKkkZA

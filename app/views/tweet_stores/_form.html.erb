@@ -1,0 +1,25 @@
+<%= form_for(@tweet_store) do |f| %>
+  <% if @tweet_store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@tweet_store.errors.count, "error") %> prohibited this tweet_store from being saved:</h2>
+
+      <ul>
+      <% @tweet_store.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :word %><br>
+    <%= f.text_field :word %>
+  </div>
+  <div class="field">
+    <%= f.label :tweet %><br>
+    <%= f.text_field :tweet %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

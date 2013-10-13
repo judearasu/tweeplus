@@ -1,0 +1,29 @@
+<h1>Listing tweet_stores</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Word</th>
+      <th>Tweet</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tweet_stores.each do |tweet_store| %>
+      <tr>
+        <td><%= tweet_store.word %></td>
+        <td><%= tweet_store.tweet %></td>
+        <td><%= link_to 'Show', tweet_store %></td>
+        <td><%= link_to 'Edit', edit_tweet_store_path(tweet_store) %></td>
+        <td><%= link_to 'Destroy', tweet_store, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tweet store', new_tweet_store_path %>
