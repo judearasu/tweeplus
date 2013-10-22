@@ -1,0 +1,33 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width">
+	<title>Tweeplus</title>
+	<link rel="stylesheet" media="screen" href="styles/bootstrap.min.css"/>
+	<link rel="stylesheet" media="screen" href="styles/app.css"/>
+</head>
+<body ng-app="tweeplus">
+
+	<div ng-controller="tweeplusCtrl">
+
+		<!-- Main page layout -->
+		<div class="row">
+			<!-- Tweets inside this frame -->
+			<div class="col-lg-4" id="tweet-frame">
+				<div class="tweetCard" data-ng-repeat="tweet in cf.tweetPage(currentPage, pageSize, sortModel)"
+				data-tweet="tweet"></div>
+			</div>
+		</div>
+	</div>
+
+	<script type="text/javascript" src="scripts/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="scripts/angular.min.js"></script>
+</body>
+</html>
