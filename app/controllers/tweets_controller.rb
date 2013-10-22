@@ -1,8 +1,9 @@
 class TweetsController < ApplicationController
 	def index
-		topics = ["linux"]
+		topics = ["linux","ruby"]
+		tweets = []
 		TSTREAM.filter(:track => topics.join(",")) do |tweet|
-			puts "#{tweet.entities}"
+			TweetStore.create(:word=>tweet.user.screen_name,:tweet=>tweet.text)
 		end
 	end
 	
