@@ -43,6 +43,7 @@ gem 'unicorn'
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
-
+# New Relic agent as a gem
+gem 'newrelic_rpm'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
