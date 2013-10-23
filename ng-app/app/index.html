@@ -16,9 +16,15 @@
 <body ng-app="tweeplus">
 
 	<div ng-controller="tweeplusCtrl" ng-init="init()">
-
+		<div>
+			<label>Name:</label>
+			<input type="text" ng-model="yourName" placeholder="Enter a name here">
+			<hr>
+			<h1>Hello {{yourName}}!</h1>
+		</div>
 		<!-- Main page layout -->
 		<div class="row">
+			 <h1>Message: {{message}}</h1>
 			<!-- Tweets inside this frame -->
 			<div class="col-lg-4" id="tweet-frame">
 				<div class="tweetCard" data-ng-repeat="tweet in cf.tweetPage(currentPage, pageSize, sortModel)"
