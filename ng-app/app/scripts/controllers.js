@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-angular.module('tweeplus.controllers', []).
+/*angular.module('tweeplus.controllers', []).
 controller('tweeplusCtrl', [function() {
 
-}])
+}])*/
