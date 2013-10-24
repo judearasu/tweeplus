@@ -5,6 +5,8 @@ class TweetStoresController < ApplicationController
   # GET /tweet_stores.json
   def index
     @tweet_stores = TweetStore.all
+    render json: TweetStore.all,:callback => params['callback']
+
   end
 
   # GET /tweet_stores/1
@@ -71,4 +73,4 @@ class TweetStoresController < ApplicationController
     def tweet_store_params
       params.require(:tweet_store).permit(:word, :tweet)
     end
-end
+  end
