@@ -5,4 +5,4 @@
 
 /** services module initialization, allows adding services to module in multiple files */
 //angular.module('tweeplus.services', []);
-var app = angular.module('tweeplus',[]);
+var app = angular.module('tweeplus',['ngResource']);
