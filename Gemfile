@@ -40,7 +40,7 @@ gem "twitter", "~> 5.0.0.rc.1"
 
 # Use unicorn as the app server
 gem 'unicorn'
-
+gem 'puma'
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
 # New Relic agent as a gem
