@@ -4017,6 +4017,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
+  background: #eee;
 }
 
 .navbar:before,
@@ -4185,6 +4186,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
+  color:#777;
 }
 
 .navbar-brand:hover,
