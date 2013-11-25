@@ -14,3 +14,9 @@ TCLIENT = Twitter::REST::Client.new do |config|
 	config.access_token        = TWITTER_CONFIG['access_token']
 	config.access_token_secret = TWITTER_CONFIG['access_token_secret']
 end
+
+#created_at
+#topics = ["coffee", "tea"]
+#TSTREAM.filter(:track => topics.join(",")) do |tweet|
+#  puts "#{tweet.created_at} - #{tweet.text}"
+#end

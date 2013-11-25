@@ -4,9 +4,8 @@ class TweetStoresController < ApplicationController
   # GET /tweet_stores
   # GET /tweet_stores.json
   def index
-    @tweet_stores = TweetStore.all
+    @tweet_stores = TweetStore.all.desc(:tweeted_on)
     render json:@tweet_stores,:callback => params['callback']
-
   end
 
   # GET /tweet_stores/1
