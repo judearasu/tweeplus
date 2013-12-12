@@ -5,7 +5,10 @@ class TweetStoresController < ApplicationController
   # GET /tweet_stores.json
   def index
     @tweet_stores = TweetStore.all.desc(:tweeted_on)
-    render json:@tweet_stores,:callback => params['callback']
+    respond_to do |format|
+      format.json {render json: @tweet_stores,:callback => params['callback']}
+      format.html
+    end
   end
 
   # GET /tweet_stores/1
