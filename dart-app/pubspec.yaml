@@ -1,0 +1,9 @@
+name: Tweetplus
+description: A tweet application build on dart
+dependencies:
+  browser: any
+  hop: any
+  http: any
+  oauth2: any
+  pathos: any
+  polymer: any
