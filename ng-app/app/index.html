@@ -14,32 +14,48 @@
 	<link rel="stylesheet" media="screen" href="styles/app.css"/>
 </head>
 <body ng-app="tweeplus">
-	<div class="navbar">
-		<div class="container">
-
-			<span class="navbar-brand">Tweeplus</span>
-
-
-
-		</div>
-	</div>
+	
 	<div ng-controller="tweeplusCtrl">
-		
-		
-		<!-- Main page layout -->
-		<div class="row">
-			
-			<!-- Tweets inside this frame -->
-			<div class="col-lg-5" id="tweet-frame">
-				<div ng-repeat="post in posts">
-					<div class="tweet">
-						<span>{{post.tweet}}</span>
-					</div>
-					<span class="username_screen">{{post.word}}</span>
-				</div>
-				
+		<!-- navbar start -->
+		<div class="navbar">
+			<div class="container">
+
+				<span class="navbar-brand">Tweeplus</span>
+
+
+
 			</div>
 		</div>
+		<!-- navbar end -->
+		<div class="container container-fluid">
+
+			<!-- Tweet feeds -->
+			<div class="row">
+
+				<!-- Tweets inside this frame -->
+				<div class="col-lg-5" id="tweet-frame">
+					<div ng-repeat="post in posts">
+						<div class="tweet">
+							<span>{{post.tweet}}</span>
+						</div>
+						<span class="username_screen">{{post.word}}</span>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- end  -->
+		</div>
+		
+		<div class="row">
+			<!-- Pagination -->
+			<pagination rotate="false" num-pages="cf.numPages(pageSize)" current-page="currentPage" max-size="12"
+			boundary-links="true"></pagination>
+			<span class="toggleLive" ng-class="live ? 'toggleActive' : ''" ng-click="toggleLive()">Live</span>
+		</div>
+
+		<!-- Main page layout -->
+		
 	</div>
 </div>
 <div>
