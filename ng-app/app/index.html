@@ -44,6 +44,15 @@
 				boundary-links="true"></pagination>
 				<span class="toggleLive" ng-class="live ? 'toggleActive' : ''" ng-click="toggleLive()">Live</span>
 			</div>
+			<div class="btn-group">
+				<button type="button" class="btn">Sort by</button>
+				<button type="button" class="btn btn-primary" ng-model="sortModel"
+				data-btn-radio="'latest'">latest</button>
+				<button type="button" class="btn btn-primary" ng-model="sortModel"
+				data-btn-radio="'followers'">followers</button>
+				<button type="button" class="btn btn-primary" ng-model="sortModel"
+				data-btn-radio="'retweets'">retweets</button>
+			</div>
 		</div>
 		
 		
