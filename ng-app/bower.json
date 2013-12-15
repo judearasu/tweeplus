@@ -25,6 +25,9 @@
     "jquery": "~2.0.3",
     "html5-boilerplate": "~4.3.0",
     "font-awesome": "~4.0.3",
-    "less": "~1.5.0"
+    "less": "~1.5.0",
+    "platform": "Polymer/platform#~0.1.1",
+    "polymer": "Polymer/polymer#~0.1.1",
+    "polymer-ui-elements": "Polymer/polymer-ui-elements#~0.1.1"
   }
 }
